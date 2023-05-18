@@ -1,0 +1,465 @@
+/*Estilos globales*/
+
+/*Limpiar*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Scrolling*/
+html{
+    scroll-behavior: smooth;
+}
+
+/* Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*Backgorund*/
+.bg-img{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*Barra de navegacion*/
+.header .navbar{
+    background-color: transparent !important;
+}
+
+.navbar .btn{
+    border-radius: 100px;
+    background-color:#5c5e1b;
+}
+
+.navbar .btn-outline-secondary{
+    border: 1px solid #5c5e1b;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 15px;
+}
+
+.navbar a{
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+}
+
+.navbar .btn:hover{
+    background-color: #A4A66A;
+    border: 1px solid #A4A66A;
+}
+.navbar a:hover{
+    font-size: 21px;
+    transition: 0.5s;
+    color: #5c5e1b;
+}
+.navbar{
+    padding: 32px;
+}
+.nav-link{
+    margin-left: 35px;
+}
+
+/*Section*/
+/*Texto*/
+section.hero{
+    padding: 70px;
+}
+
+.container h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+section.hero .text{
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 40px;
+    width: 100%;
+    color: white;
+    position: relative;
+}
+
+section.hero .text1{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    margin-top: 40px;
+    color: white;
+    width: 90%;
+    position: relative;
+}
+
+/*Formulario*/
+section.hero .form-box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    margin-left: 85px;
+}
+
+.container h3{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid black;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 1.2em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.inputbox input{
+    color: black;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+}
+
+.inputbox i{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    top:20px;
+}
+
+.form-box button{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 650;
+}
+
+/*Redes sociales*/
+
+.col{
+    position: relative;
+}
+.col .redes{
+    font-size: 18px;
+    color: black;
+}
+
+
+/*Iniciativa*//*Contactanos*/
+
+section.information{
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+}
+
+section h2{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 48px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+section p{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+section.information img{
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+section.setup{
+    text-align: center;
+    margin-top: -50px;
+}
+
+.icons i{
+    position: relative;
+    color: black;
+    font-size: 4em;
+    padding-top: 50px;
+    align-items: center;
+}
+
+section h5{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 48px;
+    color: black;
+    text-align: center;
+}
+
+section p1{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+footer{
+    padding: 20px 30px;
+}
+
+/*Adaptabilidad*/
+@media (max-width:768px){
+    .masthead{
+        min-height: 30vh;
+    }
+}
+
+@media (max-width: 576px){
+    .navbar{
+        padding:10px 0;
+    }
+
+    .nav-link{
+        margin-left: 0;
+    }
+
+    /*Section*/
+
+    .buttons .btn{
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .container h1{
+        font-size: 23px;
+        font-weight: 500;
+        color: white;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    section.hero .text{
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        width: 100%;
+        color: white;
+        position: relative;
+        text-align: center;
+        margin: 0%;
+
+    }
+    
+    section.hero .text1{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        color: white;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin: 7% 0%;
+    }
+
+    /*Formulario*/
+    section.hero .form-box{
+        position: relative;
+        width: 200px;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        background: #A4A66A;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        margin-top: 30px;
+        font-size: 13px;
+        margin-right: 200px;
+    }
+
+    .container h3{
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .inputbox{
+        position: relative;
+        margin: 30px 0;
+        width: 190px;
+        border-bottom: 2px solid black;
+    }
+    
+    .inputbox label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        color: black;
+        font-size: 1.2em;
+        pointer-events: none;
+        transition: .5s;
+    }
+    
+    input:focus ~ label,
+    input:valid ~ label{
+        top: -5px;
+    }
+    
+    .inputbox input{
+        color: black;
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0 35px 0 5px;
+    }
+    
+    .inputbox i{
+        position: absolute;
+        right: 8px;
+        color: black;
+        font-size: 1.2em;
+        top:20px;
+    }
+    
+    .form-box button{
+        width: 100%;
+        height: 40px;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1.5em;
+        font-weight: 650;
+    }
+
+
+    section.information{
+        justify-content: center;
+        align-items: center;
+        padding: 0% 10%;
+    }
+    
+    section h2{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        color: black;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    section p{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        font-weight: 200;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    
+    
+    section.information img{
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    
+    section.setup{
+        text-align: center;
+        margin-top: -50px;
+    }
+    
+    .icons i{
+        position: relative;
+        color: black;
+        font-size: 4em;
+        padding-top: 50px;
+        align-items: center;
+    }
+    
+    section h5{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 48px;
+        color: black;
+        text-align: center;
+    }
+    
+    section p1{
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        font-weight: 200;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
