@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*Cursor*/
+    cursor: url(../img/serpientemouse.png), auto;
+}
+a{
+    cursor: url(../img/serpientemousesenal.png), auto;
 }
 
 /*Scrolling*/
@@ -18,10 +23,11 @@ html{
 body{
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 /*Backgorund*/
 .bg-img{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     filter: brightness(0.5);
     position: absolute;
@@ -37,11 +43,11 @@ body{
 
 .navbar .btn{
     border-radius: 100px;
-    background-color:#5c5e1b;
+    background-color:#595412;
 }
 
 .navbar .btn-outline-secondary{
-    border: 1px solid #5c5e1b;
+    border: 1px solid #595412;
     font-size: 17px;
     font-weight: 500;
     line-height: 20px;
@@ -55,13 +61,13 @@ body{
 }
 
 .navbar .btn:hover{
-    background-color: #A4A66A;
-    border: 1px solid #A4A66A;
+    background-color: #BF9E75;
+    border: 1px solid #BF9E75;
 }
 .navbar a:hover{
     font-size: 21px;
     transition: 0.5s;
-    color: #5c5e1b;
+    color: #813001;
 }
 .navbar{
     padding: 32px;
@@ -77,49 +83,68 @@ section.hero{
 }
 
 .container h1{
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 70px;
+    font-weight: 700;
     color: white;
     position: relative;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 section.hero .text{
-    font-weight: 300;
+    font-weight: 500;
     font-size: 23px;
     line-height: 30px;
     margin-top: 40px;
     width: 100%;
     color: white;
     position: relative;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-section.hero .text1{
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 30px;
+section.hero a{
+    margin-top: 20px;
+}
+
+.hero a:hover{
+    font-size: 32px;
+    transition: 0.5s;
+    color: #813001;
+}
+
+section.hero .boton{
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 55px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid white;
+    backdrop-filter: blur(30px);
+    margin-left: 25%;
     margin-top: 40px;
-    color: white;
-    width: 90%;
-    position: relative;
+}
+
+.btn2{
+    color: aliceblue;
+    font-size: 30px;
 }
 
 /*Formulario*/
-section.hero .form-box{
-    position: relative;
-    width: 320px;
-    height: 400px;
-    justify-content: center;
+.form-box{
+    display: flex;
     align-items: center;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    height: 500px;
+    width: 100%;
     border-radius: 20px;
     backdrop-filter: blur(15px);
-    margin-left: 85px;
+    justify-content: center;
 }
 
-.container h3{
+.form h3{
     font-size: 40px;
     color: black;
     text-align: center;
@@ -129,7 +154,7 @@ section.hero .form-box{
 .inputbox{
     position: relative;
     margin: 30px 0;
-    width: 310px;
+    width: 370px;
     border-bottom: 2px solid black;
 }
 
@@ -156,14 +181,13 @@ input:valid ~ label{
     background: transparent;
     border: none;
     outline: none;
-    padding: 0 35px 0 5px;
 }
 
 .inputbox i{
     position: absolute;
     right: 8px;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.4em;
     top:20px;
 }
 
@@ -174,8 +198,17 @@ input:valid ~ label{
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 2.1em;
     font-weight: 650;
+}
+
+section.form .text1{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+    color: black;
+    width: 100%;
+    text-align: center;
 }
 
 /*Redes sociales*/
@@ -197,17 +230,17 @@ section.information{
     padding: 150px 0;
 }
 
-section h2{
+section.information h2{
     font-size: 35px;
     font-weight: 500;
     line-height: 48px;
     color: black;
     text-align: center;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-section p{
+section.information p{
     font-size: 18px;
     width: 100%;
     text-align: center;
@@ -217,13 +250,22 @@ section p{
 }
 
 section.information img{
-    margin-top: 40px;
     border-radius: 30px;
 }
 
 section.setup{
     text-align: center;
     margin-top: -50px;
+}
+
+section.setup h2{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 48px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 .icons i{
@@ -254,12 +296,22 @@ section p1{
 /*Footer*/
 footer{
     padding: 20px 30px;
+    background-color: #595412;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    margin-top: 40px;
 }
 
 /*Adaptabilidad*/
 @media (max-width:768px){
     .masthead{
         min-height: 30vh;
+    }
+
+    section.information img{
+        margin-top: 50px;
+        border-radius: 10px;
     }
 }
 
@@ -272,7 +324,7 @@ footer{
         margin-left: 0;
     }
 
-    /*Section*/
+    /*Section hero*/
 
     .buttons .btn{
         display: block;
@@ -312,24 +364,36 @@ footer{
         margin: 7% 0%;
     }
 
-    /*Formulario*/
-    section.hero .form-box{
-        position: relative;
-        width: 200px;
-        height: 350px;
-        justify-content: center;
-        align-items: center;
-        background: #A4A66A;
-        border: 2px solid rgba(255, 255, 255, 0.5);
+    section.hero .boton{
+        height: 40px;
+        width: 100px;
+        background-color: transparent;
         border-radius: 20px;
-        backdrop-filter: blur(15px);
-        margin-top: 30px;
-        font-size: 13px;
-        margin-right: 200px;
+        border: 2px solid white;
+        backdrop-filter: blur(30px);
+        margin-top: 40px;
+    }
+    
+    .btn2{
+        color: aliceblue;
+        font-size: 20px;
+        text-align: center;
     }
 
-    .container h3{
-        font-size: 20px;
+    /*Formulario*/
+
+    section.form .text1{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 30px;
+        color: black;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .form h3{
+        font-size: 30px;
         color: black;
         text-align: center;
         font-weight: 600;
@@ -338,63 +402,26 @@ footer{
     .inputbox{
         position: relative;
         margin: 30px 0;
-        width: 190px;
+        width: 200px;
         border-bottom: 2px solid black;
-    }
-    
-    .inputbox label{
-        position: absolute;
-        top: 50%;
-        left: 5px;
-        transform: translateY(-50%);
-        color: black;
-        font-size: 1.2em;
-        pointer-events: none;
-        transition: .5s;
-    }
-    
-    input:focus ~ label,
-    input:valid ~ label{
-        top: -5px;
-    }
-    
-    .inputbox input{
-        color: black;
-        width: 100%;
-        height: 50px;
-        background: transparent;
-        border: none;
-        outline: none;
-        padding: 0 35px 0 5px;
     }
     
     .inputbox i{
         position: absolute;
         right: 8px;
         color: black;
-        font-size: 1.2em;
-        top:20px;
+        font-size: 1em;
+        top:30px;
     }
     
-    .form-box button{
-        width: 100%;
-        height: 40px;
-        background: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        font-size: 1.5em;
-        font-weight: 650;
-    }
-
-
+    /*Seccion informacion*/
     section.information{
         justify-content: center;
         align-items: center;
-        padding: 0% 10%;
+        padding: 0% 15px;
     }
     
-    section h2{
+    section.information h2{
         font-size: 25px;
         font-weight: 500;
         line-height: 30px;
@@ -404,7 +431,7 @@ footer{
         margin-top: 30px;
     }
     
-    section p{
+    section.information p{
         font-size: 15px;
         width: 100%;
         text-align: center;
@@ -419,21 +446,42 @@ footer{
         border-radius: 10px;
     }
     
+    /*seccion setup*/
     section.setup{
         text-align: center;
-        margin-top: -50px;
+        margin-top: -10px;
+        padding: 0% 15px;
     }
-    
+
     .icons i{
         position: relative;
         color: black;
-        font-size: 4em;
+        font-size: 1.7em;
         padding-top: 50px;
         align-items: center;
     }
+
+    section.setup h2{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        color: black;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    section.setup p{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        font-weight: 200;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
     
     section h5{
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 500;
         line-height: 48px;
         color: black;
@@ -441,12 +489,16 @@ footer{
     }
     
     section p1{
-        font-size: 18px;
+        font-size: 16px;
         width: 100%;
         text-align: center;
         font-weight: 200;
         line-height: 35px;
         margin-bottom: 20px;
+    }
+
+    footer{
+        font-size: 16px;
     }
 
 }
